@@ -10,7 +10,7 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path:"dashboard",
+    path:"dash",
     component: DashComponent
   },
   {

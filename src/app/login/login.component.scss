@@ -1,0 +1,96 @@
+$primary-color: #6448EA;
+$secondary-color: #5CA7EB;
+$font-stack:    Helvetica, sans-serif;
+
+
+.login-background {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6448ea+0,5ca7eb+100 */
+    background: #6448ea; /* Old browsers */
+    background: -moz-linear-gradient(left, #6448ea 0%, #5ca7eb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #6448ea 0%,#5ca7eb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #6448ea 0%,#5ca7eb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6448ea', endColorstr='#5ca7eb',GradientType=1 ); /* IE6-9 */
+    height: 100vh;
+}
+
+.login-form {
+    width: 560px;
+    min-height: 100vh;
+    padding: 100px 55px 55px 55px;
+    height: 100vh;
+  }
+
+.login-title {
+    font:   $font-stack;
+}
+
+
+  .wrap-input {
+    width: 75%;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+.input100 {
+    width: 100%;
+    background: transparent;
+    font-size: 14px;
+    border: none;
+  }
+
+.login100-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    background: $primary-color;
+  
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+    .login-form {
+      width: 50%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .login-background {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-form {
+      width: 100%;
+    }
+  
+    .login-background {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .login-form {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 70px;
+    }
+  }
+  
