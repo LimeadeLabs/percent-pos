@@ -1,3 +1,45 @@
-<p>
-  dash works!
-</p>
+<div class="wrapper">
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sidebar-header text-center">
+      <img class="pos-logo mt-4" src="/assets/img/Percent-POS-white.png" width="150px" alt="">
+    </div>
+
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dummy Page 1</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="#">Tab 1</a>
+          </li>
+          <li>
+            <a href="#">Tab 2</a>
+          </li>
+          <li>
+            <a href="#">Tab 3</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dummy Page 2</a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li>
+            <a href="#">Tab 1</a>
+          </li>
+          <li>
+            <a href="#">Tab 2</a>
+          </li>
+          <li>
+            <a href="#">Tab 3</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#" id="sidebarCollapse" data-target="#sidebar" data-toggle="collapse">
+      <i class="fixed-bottom fas fa-arrow-left fa-2x ml-4 mb-3"></i>
+    </a>
+  </nav>
+  <div id="content">
+    <h3 class="page-content m-4">Page Content</h3>
+  </div>
+</div>

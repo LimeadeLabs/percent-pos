@@ -1,0 +1,72 @@
+$primary-color: #4569AC;
+$secondary-color: #5CA7EB;
+$font-stack:    Helvetica, sans-serif;
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background-color: $primary-color;
+    color: #fff;
+    ul.components {
+        padding: 20px;
+    }
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+    &:hover {
+        color: $primary-color;
+        background: #fff;
+    }
+}
+
+#sidebar ul li.active > a {
+    color: #fff;
+    background: $primary-color;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: $primary-color;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebarCollapse {
+    color: #fff;
+}
+
+// Responsive -->
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
