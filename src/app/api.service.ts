@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '../../node_modules/@angular/common/http';
-import { Http } from '../../node_modules/@angular/http';
+import { HttpClient} from '../../node_modules/@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -8,10 +7,13 @@ import { Http } from '../../node_modules/@angular/http';
 export class ApiService {
   
 
-  constructor(public http: Http) { }
+  constructor(public http: HttpClient) { }
 
   registerUser() {
-    this.http.post('percent-pos.test/register', this.registerUser);
+    this.http.post('percent-pos.test/register', this.registerUser)
+    .subscribe(data => {
+
+    });
   }
 
 }
