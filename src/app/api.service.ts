@@ -5,14 +5,19 @@ import { HttpClient} from '../../node_modules/@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
+  user = {
+    firstName: "Victor",
+    lastName: "Rodriguez",
+    email: "webdevvmrdz@gmail.com"
+  }
   
 
   constructor(public http: HttpClient) { }
 
-  registerUser() {
-    this.http.post('percent-pos.test/register', this.registerUser)
-    .subscribe(data => {
-
+  loginUser() {
+    this.http.get('http://percent-pos.test/login')
+    .subscribe( (data) => {
+      console.log(data);
     });
   }
 
