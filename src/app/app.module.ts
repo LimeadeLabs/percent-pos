@@ -7,6 +7,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpModule,
     HttpClientModule
   ],
